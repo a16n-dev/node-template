@@ -1,10 +1,9 @@
-import env from './util/env';
+import { program } from 'commander';
+import main from 'main';
 
-const main = async () => {
-  if (env.isDev) {
-    console.log('running in development');
-  }
-  console.log('something');
-};
+// cli options
+program.option('--name <string>');
 
-main();
+program.parse();
+
+main(program);
