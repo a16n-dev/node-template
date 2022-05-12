@@ -1,5 +1,5 @@
 import { program } from 'commander';
-import main from 'main';
+import main from './main';
 
 // cli options
 program.option('--name <string>');
